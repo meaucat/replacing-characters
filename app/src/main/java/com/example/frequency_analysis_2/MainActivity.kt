@@ -109,5 +109,9 @@ class MainActivity : AppCompatActivity() {
         return String.format("%.2f", percentage)                                                // Форматируем строку до двух символов после запятой и возвращаем ее
     }
 
+    private fun checkedBox(checkbox: Int){
+        val checkboxList = listOf(binding.checkboxSo, binding.checkboxKo, binding.checkboxVe, binding.checkboxSya, binding.checkboxNya, binding.checkboxV, binding.checkboxR, binding.checkboxE, binding.checkboxT, binding.checkboxC)
+    }
+
 }
 
