@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
    private fun countMatches(regexPattern: String, encryptedText: String): Int {   // Функция подсчета совпадений
         val regex = Regex(regexPattern)                                           // Создаем регулярное выражение(строки, на которые мы меняем)
         val matches = regex.findAll(encryptedText)                              // По замененному тексту ищем все совпадения
-        matches.forEach { _ ->                                              // Пробегаемся по каждому совпадению и записываем каждое в count
+        matches.forEach {                                              // Пробегаемся по каждому совпадению и записываем каждое в count
             count++
         }
         return count                              // Возвращаем подсчитанное значение
